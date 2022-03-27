@@ -1,0 +1,980 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1140px;
+}
+
+.nav_container {
+  padding-top: 10px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.toggle_search {
+  width: 65px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.toggle {
+  width: 15px;
+  height: 13px;
+  position: relative;
+  display: block;
+  top: 6px;
+}
+
+.toggle span {
+  position: absolute;
+  width: 100%;
+  border: solid 1.50px #6C6C6C;
+  background-color: #6C6C6C;
+}
+
+
+.toggle span:nth-child(2) {
+  top: 5px;
+}
+
+.toggle span:last-child {
+  bottom: 0;
+}
+
+.list_items {
+  width: 450px;
+  padding-top: 13px;
+}
+
+.list_items ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.list_items li {
+  list-style: none;
+  
+}
+
+.list_items li a::before {
+  content: "";
+  width: 0%;
+  border-bottom: solid;
+  position: absolute;
+  bottom: -2px;
+  display: inline-block;
+  transition: .3s all;
+}
+
+.list_items li:hover a::before {
+  width: 100%;
+  transition: .3s;
+}
+
+
+.list_items li a {
+  position: relative;
+  text-decoration: none;
+  color: #6C6C6C;
+  transition: .3s all;
+}
+
+.login_shopping {
+  width: 70px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.login_shopping a {
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  color: #6C6C6C;
+  transition: .3s;
+}
+
+.login_shopping a::before {
+  content: "";
+  width: 0%;
+  border-bottom: solid;
+  position: absolute;
+  bottom: 30px;
+  display: inline-block;
+  transition: .3s all;
+}
+
+.login_shopping:hover a::before {
+  width: 100%;
+  transition: .3s;
+}
+
+
+/* main started */
+
+main {
+  height: 503px;
+  padding: 0;
+  background-color: #F2F2F2;
+  margin: 0 20px;
+}
+
+.container_main {
+  height: 99.80%;
+  margin: 0 auto;
+  background-image: url(./photo_2021-02-05_18-12-48.jpg);
+  background-repeat: no-repeat;
+  background-position-y: -70px;
+  background-position-x: -125px;
+}
+
+
+.name_clock {
+  padding: 0;
+  position: relative;
+  top: 200px;
+  text-align: right;
+}
+
+.txt_about {
+  width: 100%;
+  height: auto;
+}
+
+.container_main h1 {
+  margin: 0;
+  color: #6C6C6C;
+  line-height: 1.7;
+  font-weight: 400px;
+}
+
+.txt_about :nth-child(2) {
+  word-spacing: 5px;
+  color: #6C6C6C;
+}
+
+.txt_about :nth-child(3) {
+  color: #B9A16B;
+}
+
+.circle {
+  position: relative;
+  width: 40px;
+  height: 10px;
+  bottom: 30px;
+  left: 20px;
+  padding-top: 2px;
+}
+
+.circle span {
+  position: absolute;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #AAAAAA;
+}
+
+.circle :nth-child(1) {
+  top: 1px;
+  left: 0;
+}
+ 
+.circle :nth-child(2) {
+  margin-left: 16px;
+  background-color: #B9A16B;
+  width: 9px;
+  height: 9px;
+  top: 0;
+}
+
+.circle :nth-child(3) {
+  top: 1.70px;
+  right: 0;
+}
+
+/* sectio 1st strated */
+
+.st_section {
+  margin-top: 50px;
+  height: auto;
+  color: #6C6C6C;
+}
+
+.st_section_container {
+  margin: 0 auto;
+}
+
+.st_section_container h2 {
+  margin: 20px 0;
+}
+
+
+.accessories {
+  flex-basis: 48.90%;
+  height: 270px;
+  background-image: url(./duante-pendant-768x768.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 350px;
+  background-position: 250px;
+  background-position-y: -60px;
+  padding: 0;
+  background-color: #E7D8D4;
+}
+
+.discount_box1 {
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.discount_box1 p:nth-child(1) {
+  color: #B9A16B;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.discount_box1 button {
+  position: relative;
+  width: 153px;
+  height: 36px;
+  border: solid 2px;
+  background-color: inherit;
+  margin-top: 25px;
+  overflow: hidden;
+  
+}
+
+.discount_box1 button a {
+  position: absolute;
+  text-decoration: none;
+  color: #6C6C6C;
+  top: 6px;
+  left: 15px;
+  transition: .3s all;
+}
+
+.discount_box1 button:hover a {
+  transform: translateX(-8px);
+  transition: .3s;
+}
+
+.discount_box1 button img {
+  width: 32px;
+  height: 30px;
+  position: absolute;
+  right:-30px;
+  top: 0px;
+  transition: .3s all; 
+}
+
+.discount_box1 button:hover img {
+  transition: .3s;
+  right: 5px;
+}
+
+.clearance {
+  background-image: url(.//Рисунок1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 220px;
+  background-position-y: 0px;
+  background-position-x: 300px;
+  flex-basis: 48.90%;
+  height: 270px;
+  background-color: #D1EBF2;
+  padding: 0;
+}
+
+.discount_box2 {
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.discount_box2 p:nth-child(1) {
+  color: #B9A16B;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.discount_box2 button {
+  position: relative;
+  width: 153px;
+  height: 36px;
+  border: solid 2px;
+  background-color: inherit;
+  margin-top: 25px;
+  overflow: hidden;
+
+}
+
+.discount_box2 button a {
+  position: absolute;
+  text-decoration: none;
+  color: #6C6C6C;
+  top: 6px;
+  left: 15px;
+  transition: .3s all;
+}
+
+.discount_box2 button:hover a {
+  transform: translateX(-8px);
+  transition: .3s;
+}
+
+.discount_box2 button img {
+  width: 32px;
+  height: 30px;
+  position: absolute;
+  right:-30px;
+  top: 0px;
+  transition: .3s all; 
+}
+
+.discount_box2 button:hover img {
+  transition: .3s;
+  right: 5px;
+}
+
+.shop_women {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 220px;
+  background-position-y: 0px;
+  background-position-x: 300px;
+  flex-basis: 48.90%;
+  height: 300px;
+  background-color: #F2F2F2;
+  padding: 0;
+  position: relative;
+  top: 30px;
+}
+
+.discount_box3 {
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.discount_box3 p:nth-child(1) {
+  color: #B9A16B;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.discount_box3 button {
+  position: relative;
+  width: 153px;
+  height: 36px;
+  border: solid 2px;
+  background-color: inherit;
+  margin-top: 25px;
+  overflow: hidden;
+
+}
+
+.discount_box3 button a {
+  position: absolute;
+  text-decoration: none;
+  color: #6C6C6C;
+  top: 6px;
+  left: 15px;
+  transition: .3s all;
+}
+
+.discount_box3 button:hover a {
+  transform: translateX(-8px);
+  transition: .3s;
+}
+
+.discount_box3 button img {
+  width: 32px;
+  height: 30px;
+  position: absolute;
+  right:-30px;
+  top: 0px;
+  transition: .3s all; 
+}
+
+.discount_box3 button:hover img {
+  transition: .3s;
+  right: 5px;
+}
+
+.clock_and_hanger {
+  flex-basis: 48.90%;
+  height: 300px;
+  background-color: #ffffff;
+  padding: 0;
+  position: relative;
+  top: 30px;
+
+}
+
+.clock_box {
+  flex-basis: 48.50%;
+  background-image: url(./imgs1/norm-wall-clock-450x450.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  background-color: #F2F2F2;
+  padding: 0;
+}
+
+.clock_box > div {
+  position: relative;
+  margin: 0;
+  height: 120%;
+}
+
+.coat-hanger_box {
+  flex-basis: 48.50%;
+  background-image: url(./imgs1/afteroom-coat-hanger-450x450.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  background-color: #F2F2F2;
+  padding: 0;
+}
+
+.coat-hanger_box > div {
+  position: relative;
+  margin: 0;
+  height: 120%;
+}
+
+.clock_and_hanger .prices_box1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.clock_and_hanger .prices_box2 {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0px;
+  padding: 0;
+}
+
+ [class*="prices_box"] p:nth-child(1) {
+   margin-top: 0;
+   margin-bottom: 5px;
+ }
+
+ [class*="prices_box"] p:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* section 2nd strarted */
+
+.nd_section {
+  margin: 70px 0;
+}
+
+.nd_section_container {
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #EDEAD3;
+}
+
+.txt_connected-spaces {
+  text-align: center;
+}
+
+.txt_connected-spaces :nth-child(1){
+  text-transform: uppercase;
+  color: #cea33f;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.txt_connected-spaces :nth-child(2) {
+  margin: 15px 0;
+}
+
+.txt_connected-spaces :nth-child(2) {
+  margin: 15px 0;
+  color: #6C6C6C;
+}
+
+.txt_connected-spaces :nth-child(3) {
+  color: #6C6C6C;
+}
+
+.icons_nd-section {
+  margin-top: 50px;
+  color: #6C6C6C;
+}
+
+.box_icons {
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box_icons h3 {
+  margin-top: 20px;
+}
+
+.box_icons p {
+  margin: 10px 0 0 0;
+}
+
+/* section 3rd started */
+
+.rd_section {
+  margin-bottom: 70px;
+}
+
+.rd_section-container {
+  margin: 0 auto;
+}
+
+.col1-inner {
+  flex-basis: 41.90%;
+  background-color: #F2F2F2;
+  padding-left: 40px;
+  font-size: 14px;
+}
+
+.text_st-col p:nth-child(1) {
+  color: #B9A16B;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.text_st-col h1:nth-child(2) {
+  margin-top: 10px;
+}
+
+.text_st-col {
+  margin-top: 50%;
+  color: #6C6C6C;
+}
+
+.text_st-col p:nth-child(3) {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.text_st-col button {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  border: solid 2px;
+  background-color: inherit;
+  margin-top: 10px;
+  overflow: hidden;
+
+}
+
+.text_st-col button a {
+  position: absolute;
+  text-decoration: none;
+  color: #6C6C6C;
+  top: 8px;
+  left: 15px;
+  transition: .3s all;
+}
+
+.text_st-col button:hover a {
+  transform: translateX(-10px);
+  transition: .3s;
+}
+
+.text_st-col button img {
+  width: 32px;
+  height: 30px;
+  position: absolute;
+  right:-30px;
+  top: 3px;
+  transition: .3s all; 
+}
+
+.text_st-col button:hover img {
+  transition: .3s;
+  right: 5px;
+}
+
+.col2-inner {
+  flex-basis: 56.333%;
+  padding: 0;
+}
+
+.col2-inner > div >div {
+  height: 280px;
+  flex-basis: 47.50%;
+  background-color: #F2F2F2;
+}
+
+.hanger {
+  background-image: url(./imgs1/afteroom-coat-hanger2-450x450.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.stolne-lamp {
+  background-image: url(./imgs1/stone-lamp-white2-768x768.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: right;
+}
+
+.wall_clock{
+  margin-top: 20px;
+  background-image: url(./imgs1/norm-wall-clock2-768x768.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.duante-pendant {
+  margin-top: 20px;
+  background-image: url(./duante-pendant-768x768.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: bottom;
+}
+
+/* 4th section started */
+
+.fo-th_section {
+  margin-bottom: 60px;
+}
+
+.fo-th_section_container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fo-th_section_container p {
+  margin: 30px 0;
+  color: #6C6C6C;
+  font-size: 14px;
+}
+
+.fo-th_section_container h2 {
+  color: #6C6C6C;
+}
+
+.fo-th_section_container div:nth-child(2) > div {
+  height: 250px;
+  flex-basis: 23.50%;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  transition: .3s all;
+  position: relative;
+}
+
+.fo-th_section_container div:nth-child(2) > div img {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 20px;
+  top: 15px;
+}
+
+.fo-th_section_container div:nth-child(2) > div:hover {
+  transition: .3s;
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 10px rgba(48, 34, 34, 0.747);
+}
+
+.fo-th_section_container div:nth-child(2) > div:nth-child(1) {
+  background-image: url(./imgs1/bobber-table-black3-450x450.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.fo-th_section_container div:nth-child(2) > div:nth-child(2) {
+  background-image: url(./imgs1/marshall-speaker-white2-450x450.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.fo-th_section_container div:nth-child(2) > div:nth-child(2) p {
+  color: red;
+  width: 35px;
+  height: 15px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 10px;
+  top: 0px;
+  margin-top: 10px;
+}
+
+.fo-th_section_container div:nth-child(2) > div:nth-child(3) {
+  background-image: url(./imgs1/bollard-lamp-black-450x450.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.fo-th_section_container div:nth-child(2) > div:nth-child(3) p {
+  width: 35px;
+  height: 15px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 10px;
+  top: 0px;
+  margin-top: 10px;
+}
+
+.fo-th_section_container div:nth-child(2) > div:nth-child(4) {
+  background-image: url(./imgs1/stone-lamp-black2-450x450.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* 5th section started */
+
+.fi-th_section {
+  margin: 70px 0 70px 0;
+}
+
+.fi-th_section_container {
+  margin: 0 auto;
+  text-align: center;
+  color: #6C6C6C;
+}
+
+.fi-th_section_container > div:first-child p {
+  margin: 30px 0;
+  font-size: 14px;
+}
+
+.cols > div {
+  height: auto;
+  flex-basis: 31.80%;
+  border-radius: 5px;
+  text-align: left;
+  padding: 0;
+}
+
+.for-img {
+  width: 100%;
+  height: 170px;
+}
+
+.img1 {
+  background-image: url(./imgs1/norm-clock-gallery4-768x512.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -20px;
+}
+
+.img2 {
+  background-image: url(./imgs1/colounge-chair-gallery5-768x1152.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -190px;
+}
+
+.img3 {
+  background-image: url(./imgs1/synnes-chair-gallery6-768x576.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -50px;
+}
+
+.for-img + div span {
+  color: #6C6C6C;
+}
+
+.for-img + div p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.for-img + div h3 {
+  margin: 10px 0;
+}
+
+
+.two-circle {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.two-circle span {
+  position: absolute;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #AAAAAA;
+}
+
+.two-circle :nth-child(1) {
+  right: 0;
+  top: 1.65px;
+}
+ 
+.two-circle :nth-child(2) {
+  background-color: #B9A16B;
+  width: 9px;
+  height: 9px;
+  top: 0;
+  left: 0;
+}
+
+/* footer started */
+
+footer {
+  padding: 50px 0 30px 0;
+  background-color: #3A3A3A;
+}
+
+.footer_container {
+  margin: 0 auto;
+}
+
+.footer_container > .row >div {
+  padding: 0;
+}
+
+.footer_container > .row h3 {
+  color: #6C6C6C;
+}
+
+.footer_container > .row ul {
+  margin-top: 20px;
+}
+
+.footer_container > .row li {
+  margin-top: 10px;
+  color: #ddd5d5;
+  list-style-type: none;
+}
+
+
+.sign-up_box {
+  flex-basis: 32.333%;
+}
+
+.sign-up_box p {
+  margin: 20px 0 30px 0;
+  color: #6C6C6C;
+}
+
+.sign-up_box input:nth-child(3) {
+  width: 200px;
+  height: 50px;
+  padding-left: 10px;
+  color: #6C6C6C;
+}
+
+.sign-up_box input:nth-child(4) {
+  width: 100px;
+  height: 50px;
+  background-color: #3A3A3A;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  margin-left: 10px;
+}
+
+footer hr {
+  margin-top: 40px;
+  border: solid 1px #6C6C6C;
+}
+
+.bottom-container {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.bottom-container .row > div{
+  padding: 0;
+}
+
+.bottom-container .row :nth-child(1) {
+  color: #ddd5d5;
+  padding: 0;
+  display: flex;
+}
+
+.bottom-container .row :nth-child(1) p:nth-child(2) {
+  margin-left: 20px;
+}
+
+.social_media {
+  width: 100px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.social_media img {
+  width: 20px;
+  height: 20px;
+}
+
+.currency {
+  color: #6C6C6C;
+  display: flex;
+  position: relative;
+}
+
+.currency .row {
+  position: absolute;
+  right: 0;
+}
+
+.currency .row > p:first-child {
+  color: #6C6C6C;
+}
+
+.currency .row > p {
+  color: #6C6C6C;
+}
+
+.currency select:nth-child(2) {
+  width: 50px;
+  height: auto;
+  border: none;
+  background-color: #3A3A3A;
+  color: #ffffff;
+  margin: 0 20px 0 5px;
+}
+
+.currency select:nth-child(4) {
+  width: 65px;
+  border: none;
+  background-color: #3A3A3A;
+  color: #ffffff;
+  margin: 0 0 0 5px
+}
+
